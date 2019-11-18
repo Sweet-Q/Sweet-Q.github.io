@@ -7,18 +7,18 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>real_analysis - Sweet-Q</title>
+<title>数学分析二数列、函数极限 - Sweet-Q</title>
 
 
-    <meta name="description" content="参考书籍：《数学分析》 华东师大第四版《实分析》第三版 陶哲轩我选择了陶哲轩的前四章来讲述实数部分，之后采用华东师大的①②③④⑤⑥⑦⑧⑨⑩ ⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳">
+    <meta name="description" content="这里主要参考华东师大数学分析第二、三章。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="real_analysis">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;15&#x2F;real_analysis&#x2F;index.html">
+<meta property="og:title" content="数学分析二数列、函数极限">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;11&#x2F;analysis2&#x2F;index.html">
 <meta property="og:site_name" content="Sweet-Q">
-<meta property="og:description" content="参考书籍：《数学分析》 华东师大第四版《实分析》第三版 陶哲轩我选择了陶哲轩的前四章来讲述实数部分，之后采用华东师大的①②③④⑤⑥⑦⑧⑨⑩ ⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳">
+<meta property="og:description" content="这里主要参考华东师大数学分析第二、三章。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
-<meta property="og:updated_time" content="2019-11-18T03:58:09.772Z">
+<meta property="og:updated_time" content="2019-11-18T08:21:42.707Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
 
@@ -78,7 +78,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="real_analysis" height="28">
+                <img src="/images/logo.svg" alt="数学分析二数列、函数极限" height="28">
             
             </a>
         </div>
@@ -124,7 +124,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-11-15T11:56:00.000Z">2019-11-15</time>
+                <time class="level-item has-text-grey" datetime="2019-11-11T02:52:00.000Z">2019-11-11</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a>
@@ -134,7 +134,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    7 分钟 读完 (大约 1082 个字)
+                    1 分钟 读完 (大约 152 个字)
                 </span>
                 
                 
@@ -143,21 +143,13 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                real_analysis
+                数学分析二数列、函数极限
             
         </h1>
         <div class="content">
-            <p>参考书籍：《数学分析》 华东师大第四版<br>《实分析》第三版 陶哲轩<br>我选择了陶哲轩的前四章来讲述实数部分，之后采用华东师大的<br>①②③④⑤⑥⑦⑧⑨⑩ ⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳<br> <a id="more"></a></p>
-<h1 id="实数、集合、函数："><a href="#实数、集合、函数：" class="headerlink" title="实数、集合、函数："></a>实数、集合、函数：<br></h1><h2 id="实数"><a href="#实数" class="headerlink" title="实数"></a>实数</h2><p>这里我用的是陶哲轩的实分析，对于实数讲的比较严谨清晰。<br>定义实数的大致过程如下：<br>$\color{teal}{自然数{\Bbb {N}}\implies整数{\Bbb {Z}}\implies有理数{\Bbb {Q}}\implies实数{\Bbb {R}}\implies复数{\Bbb {Q}}}$</p>
-<h3 id="自然数"><a href="#自然数" class="headerlink" title="自然数"></a>自然数</h3><h4 id="color-red-Peano公理"><a href="#color-red-Peano公理" class="headerlink" title="$\color{red}{Peano公理}$"></a><strong>$\color{red}{Peano公理}$</strong></h4><p>我们要定义实数，就要先定义什么是自然数。因此，我们陈述以下公理：<br><strong>1. $\color{blue}{0是一个自然数。}$</strong><br><strong>2. $\color{blue}{若 n 是自然数，则 n++ 也是自然数。}$</strong> （这里的n++意思是n往后一位的数字）<br>Eg：$3$是自然数<br><strong>3. $\color{blue}{0不是任何自然数的后继。}$</strong><br>公理三出现的原因是：例如在计算机中，因为储存单元有限，一旦数字大过某一值后，再$++$就会变为$0$. Eg:如果只能记忆三个数字,则在{$0,1,2,3$} 中，在 $3++$ 后，会变成$0$。<br>Eg：$4\neq0$;<br><strong>4.$\color{blue}{不同自然数必有不同后继者；即：若 n,m 是自然数且n\neq m,则n++ \neq m++}$。<br>Eg:$6\neq2$。<br>*<em>5.$\color{blue}{数学归纳法}$<br>*</em>注记</strong>：自然数是有限的（$0$是有限数，$n$为有限数，则$n++$为有限数），但自然数集是无限的（$n$趋于无限）。<br><strong>注记</strong>：自然数是公理化的。也就是说自然数不是经过定义而得到的。</p>
-<h3 id="color-red-加法"><a href="#color-red-加法" class="headerlink" title="$\color{red}{加法}$"></a>$\color{red}{加法}$</h3><p>目前为止自然数只有一种运算，就是$++$,我们<strong>定义</strong>一个更加复杂的算法：<strong>加法</strong>。<br>$:=$的意思是 定义为</p>
-<h4 id="加法定义：-0-m-m-，-n-m-n-m"><a href="#加法定义：-0-m-m-，-n-m-n-m" class="headerlink" title="加法定义：$0+m:=m$，$(n++)+m:=(n+m)++$"></a><strong>加法定义</strong>：$0+m:=m$，$(n++)+m:=(n+m)++$</h4><h4 id="加法性质："><a href="#加法性质：" class="headerlink" title="加法性质："></a><strong>加法性质：</strong></h4><p>①$\because 0+0=0$<br>假设 $n+0=n$<br>  则$(n++)+0=(n+0)++=n++$<br>  故得证：$\color{blue}{n+0=n}$<br>②因为$0+(m++)=m++=(0+m)++$<br>设$n+(m++)=(n+m)++$<br>则$(n++)+(m++)=[(n++)+m]++$<br>即：$\color{blue}{n+(m++)=(n+m)++}$<br>证毕！<br>③$\color{blue}{加法交换律}$<br>已知：$0+m=m=m+0$<br>假设：$n+m=m+n$<br>则；$(n++)+m=(n+m)++=(m+n)++=m+(n++)$<br>证毕！<br>④$\color{blue}{加法结合律}$<br>已知 $(a+b)+0=a+b=a+(b+0)$<br>设：$(a+b)+c=a+(b+c)$<br>则: $(a+b)+(c++)=[(a+b)+c]++=[a+(b+c)]++=a+[(b+c)++]=a+[b+(c++)]$<br>⑤$\color{blue}{消去律}$<br>已知：$0+b=0+c$ 时，有 $b=c$<br>设：$a+b=a+c$时，有$b=c$<br>则：$(a++)+b=(a++)+c$时，有$(a++)+b=(a+b)++=(a+c)++=(a++)+c$</p>
-<h4 id="几种关系及性质"><a href="#几种关系及性质" class="headerlink" title="几种关系及性质"></a>几种关系及性质</h4><hr>
-<p>$假设集合A，以及基于A上的关系{\Bbb {R}}$<br>$自反：  如果a是A的元素，那么&lt;a,a&gt;是R的元素 $<br>$反自反：如果a是A的元素，那么&lt;a,a&gt;不是R的元素 $<br>$对称：  如果&lt;a,b&gt;是R的元素，那么&lt;b,a&gt;是R的元素$<br>$反对称：如果&lt;a,b&gt;，&lt;b,a&gt;是R的元素，那么a,b相等$<br>$传递：  如果&lt;a,b&gt;，&lt;b,c&gt;是R的元素，那么&lt;a,c&gt;是R的元素$</p>
-<hr>
-<h4 id="正自然数定义：当且仅但不等于-0-得时候叫做正自然数。"><a href="#正自然数定义：当且仅但不等于-0-得时候叫做正自然数。" class="headerlink" title="正自然数定义：当且仅但不等于$0$得时候叫做正自然数。"></a><strong>正自然数定义</strong>：当且仅但不等于$0$得时候叫做正自然数。</h4><h4 id="自然数序的定义-设m-n为自然数-则m大于等于n，写作-m-geq-n-或n-leq-m。当且仅当存在某自然数a，有m-n-a。m严格大于n，写作m-gt-n或n-lt-m-当且仅当m-geq-n且m-neq-n。"><a href="#自然数序的定义-设m-n为自然数-则m大于等于n，写作-m-geq-n-或n-leq-m。当且仅当存在某自然数a，有m-n-a。m严格大于n，写作m-gt-n或n-lt-m-当且仅当m-geq-n且m-neq-n。" class="headerlink" title="自然数序的定义: $设m,n为自然数,则m大于等于n，写作 m\geq n 或n\leq m。当且仅当存在某自然数a，有m=n+a。m严格大于n，写作m&gt;n或n&lt;m,当且仅当m\geq n且m\neq n。$"></a><strong>自然数序的定义</strong>: $设m,n为自然数,则m大于等于n，写作 m\geq n 或n\leq m。当且仅当存在某自然数a，有m=n+a。m严格大于n，写作m&gt;n或n&lt;m,当且仅当m\geq n且m\neq n。$</h4><h4 id="正自然数序性质："><a href="#正自然数序性质：" class="headerlink" title="正自然数序性质："></a><strong>正自然数序性质：</strong></h4><p>①(自反性)$a\geq a$<br>②(传递性)$若a\geq b,b\geq c,则a\geq c$<br>③(反对称性)$若a\geq b,b\leq a,则a=c$<br>④(保序性)$a\geq b当且仅当a+c\geq b+c$<br>⑤$a&lt;b当且仅当a++\leq b$<br>⑥$a&lt;b当且仅当对于某正数d，b=a+d$<br>⑦(三歧性)$设a，b是自然数，那么下面三个恰有一个是真的$：$$a&lt;b, a=b ,a&gt;b$$</p>
-<h3 id="color-red-乘法"><a href="#color-red-乘法" class="headerlink" title="$\color{red}{乘法}$"></a>$\color{red}{乘法}$</h3><h4 id="自然数的乘法定义：-设是自然数，定义0-times-m-0。定义-n-times-m-n-times-m-m。（n-times-m-nm）"><a href="#自然数的乘法定义：-设是自然数，定义0-times-m-0。定义-n-times-m-n-times-m-m。（n-times-m-nm）" class="headerlink" title="自然数的乘法定义：$设是自然数，定义0\times m :=0。定义(n++)\times m:=(n\times m)+m。（n\times m :=nm）$"></a>自然数的乘法定义：$设是自然数，定义0\times m :=0。定义(n++)\times m:=(n\times m)+m。（n\times m :=nm）$</h4><h4 id="乘法性质："><a href="#乘法性质：" class="headerlink" title="乘法性质："></a>乘法性质：</h4><p>设a，b，c，n，m是自然数，则有<br>①$(\color{blue}{交换律})n\times m=m\times n$<br>②$(\color{blue}{无零因子}）设nm=0，当且仅当n，m中有一个为0.$<br>③$(\color{blue}{结合律}）(ab)c=a(bc)$<br>⑤$(\color{blue}{保序性}）设a&lt;b，c是正数，则 ac&lt;bc$<br>⑥$(\color{blue}{消去律}）设ac=bc，c不为0，则a=b$<br>####$\color{blue}{欧几里得算法}$<br>$设n是自然数且q是整数，则存在自然数m，r，使得0\leq   r&lt;q且n=mq+r$<br>####$\color{blue}{指数运算}$<br>$设m是自然数，m^0:=1,m^{n++}=m^n\times m$</p>
-<h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><h3 id><a href="#" class="headerlink" title></a></h3>
+            <p>这里主要参考华东师大数学分析第二、三章。<br> <a id="more"></a></p>
+<h1 id="数列"><a href="#数列" class="headerlink" title="数列"></a>数列</h1><p>##定义：<br>$f:$<strong>$\Bbb N_+$</strong>$\rightarrow$ $\Bbb R$,可写为$a_1,a_2,…，a_n，…，$或$\lbrace a_n\rbrace.$<br>##收敛数列：<br>当$n$取无穷大时，$a_n$无限接近于常数$a$.<br>设$\lbrace a_n\rbrace$为数列$a$为定数，若$\forall \varepsilon$, $\exists$正整数N,St. $n&gt;N$时，有<br>$$\mid a_n-a\mid&lt;\varepsilon$$<br>则称数列$\lbrace a_n\rbrace$收敛于$a$，定数$a$称为数列$\lbrace a_n\rbrace$的极限，记作$$ \lim_{n \to +\infty}a_n=a \quad or \quad a_n \to a(n\to \infty) $$</p>
+
         </div>
         
         
@@ -284,34 +276,10 @@
                     目录
                 </h3>
                 <ul class="menu-list"><li>
-        <a class="is-flex" href="#实数、集合、函数：">
+        <a class="is-flex" href="#数列">
         <span class="has-mr-6">1</span>
-        <span>实数、集合、函数：</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#实数">
-        <span class="has-mr-6">1.1</span>
-        <span>实数</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#自然数">
-        <span class="has-mr-6">1.1.1</span>
-        <span>自然数</span>
-        </a></li><li>
-        <a class="is-flex" href="#color-red-加法">
-        <span class="has-mr-6">1.1.2</span>
-        <span>$\color{red}{加法}$</span>
-        </a></li><li>
-        <a class="is-flex" href="#color-red-乘法">
-        <span class="has-mr-6">1.1.3</span>
-        <span>$\color{red}{乘法}$</span>
-        </a></li></ul></li><li>
-        <a class="is-flex" href="#集合">
-        <span class="has-mr-6">1.2</span>
-        <span>集合</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#">
-        <span class="has-mr-6">1.2.1</span>
-        <span></span>
-        </a></li></ul></li></ul></li></ul>
+        <span>数列</span>
+        </a></li></ul>
             </div>
         </div>
     </div>
@@ -392,7 +360,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="real_analysis" height="28">
+                    <img src="/images/logo.svg" alt="数学分析二数列、函数极限" height="28">
                 
                 </a>
                 <p class="is-size-7">
