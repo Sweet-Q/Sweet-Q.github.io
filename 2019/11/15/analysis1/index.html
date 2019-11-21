@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 4.0.0" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>数学分析一实数、集合 - Sweet-Q</title>
+
+
+    <meta name="description" content="参考书籍：《数学分析》 华东师大第四版《实分析》第三版 陶哲轩我选择了陶哲轩的前四章来讲述实数部分，之后采用华东师大的①②③④⑤⑥⑦⑧⑨⑩ ⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数学分析一实数、集合">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;15&#x2F;analysis1&#x2F;index.html">
+<meta property="og:site_name" content="Sweet-Q">
+<meta property="og:description" content="参考书籍：《数学分析》 华东师大第四版《实分析》第三版 陶哲轩我选择了陶哲轩的前四章来讲述实数部分，之后采用华东师大的①②③④⑤⑥⑦⑧⑨⑩ ⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
+<meta property="og:updated_time" content="2019-11-18T16:11:28.021Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
+
+
+
+
+
+
+
+<link rel="icon" href="/images/favicon.svg">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+<style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+    
+    
+    
+    
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+    
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+    
+    
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo.svg" alt="数学分析一实数、集合" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item"
+                href="/">主页</a>
+                
+                <a class="navbar-item"
+                href="/archives">时间线</a>
+                
+                <a class="navbar-item"
+                href="/categories">分类</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;" target="_blank" rel="noopener">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;" target="_blank" rel="noopener">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-11-15T11:56:00.000Z">2019-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    9 分钟 读完 (大约 1422 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                数学分析一实数、集合
+            
+        </h1>
+        <div class="content">
+            <p>参考书籍：《数学分析》 华东师大第四版<br>《实分析》第三版 陶哲轩<br>我选择了陶哲轩的前四章来讲述实数部分，之后采用华东师大的<br>①②③④⑤⑥⑦⑧⑨⑩ ⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳<br> <a id="more"></a></p>
+<h1 id="实数与运算、集合与关系："><a href="#实数与运算、集合与关系：" class="headerlink" title="实数与运算、集合与关系："></a>实数与运算、集合与关系：<br></h1><h2 id="实数"><a href="#实数" class="headerlink" title="实数"></a>实数</h2><p>这里我用的是陶哲轩的实分析，对于实数讲的比较严谨清晰。<br>定义实数的大致过程如下：<br>$\color{teal}{自然数{\Bbb {N}}\implies 整数\Bbb {Z}}$<br>$\color{teal}{\implies 有理数\Bbb Q \implies实数 \Bbb{R} \implies 复数{\Bbb Q}}$</p>
+<h3 id="自然数"><a href="#自然数" class="headerlink" title="自然数"></a>自然数</h3><h4 id="Peano公理"><a href="#Peano公理" class="headerlink" title="$Peano公理$"></a>$Peano公理$</h4><p><strong>$\color{red}{Peano公理}$</strong><br>我们要定义实数，就要先定义什么是自然数。因此，我们陈述以下公理：<br><strong>1. $\color{blue}{0是一个自然数。}$</strong><br><strong>2. $\color{blue}{若 n 是自然数，}$${\color{blue}{则 n++ 也是自然数。}}$</strong> （这里的n++意思是n往后一位的数字）<br>Eg：$3$是自然数<br><strong>3. $\color{blue}{0不是任何自然数的后继。}$</strong><br>公理三出现的原因是：例如在计算机中，因为储存单元有限，一旦数字大过某一值后，再$++$就会变为$0$. Eg:如果只能记忆三个数字,则在{$0,1,2,3$} 中，在 $3++$ 后，会变成$0$。<br>Eg：$4\neq0$;<br><strong>4.$\color{blue}{不同自然数必有不同后继者}$；即：若$ n,m $是自然数且$n\neq m,则n++ \neq m++$。</strong><br>Eg:$6\neq2$。<br><strong>5.$\color{blue}{数学归纳法}$</strong><br><strong>注记</strong>：自然数是有限的（$0$是有限数，$n$为有限数，则$n++$为有限数），但自然数集是无限的（$n$趋于无限）。<br><strong>注记</strong>：自然数是公理化的。也就是说自然数不是经过定义而得到的。</p>
+<h3 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h3><p>$\color{red}{加法运算}$<br>目前为止自然数只有一种运算，就是$++$,我们<strong>定义</strong>一个更加复杂的算法：<strong>加法</strong>。<br>$:=$的意思是 定义为</p>
+<h4 id="加法定义：-0-m-m-，-n-m-n-m"><a href="#加法定义：-0-m-m-，-n-m-n-m" class="headerlink" title="加法定义：$0+m:=m$，$(n++)+m:=(n+m)++$"></a><strong>加法定义</strong>：$0+m:=m$，$(n++)+m:=(n+m)++$</h4><h4 id="加法性质："><a href="#加法性质：" class="headerlink" title="加法性质："></a><strong>加法性质：</strong></h4><p>①$\because 0+0=0$<br>假设 $n+0=n$<br>  则$(n++)+0=(n+0)++=n++$<br>  故得证：$\color{blue}{n+0=n}$<br>②因为$0+(m++)=m++=(0+m)++$<br>设$n+(m++)=(n+m)++$<br>则$(n++)+(m++)=[(n++)+m]++$<br>即：$\color{blue}{n+(m++)=(n+m)++}$<br>证毕！<br>③$\color{blue}{加法交换律}$<br>已知：$0+m=m=m+0$<br>假设：$n+m=m+n$<br>则；$(n++)+m=(n+m)++$$=(m+n)++=m+(n++)$<br>证毕！<br>④$\color{blue}{加法结合律}$<br>已知 $(a+b)+0=a+b=a+(b+0)$<br>设：$(a+b)+c=a+(b+c)$<br>则: $(a+b)+(c++)=$$[(a+b)+c]++=[a+(b+c)]$$++=a+[(b+c)++]=$$a+[b+(c++)]$<br>⑤$\color{blue}{消去律}$<br>已知：$0+b=0+c$ 时，有 $b=c$<br>设：$a+b=a+c$时，有$b=c$<br>则：$(a++)+b=(a++)+c$时，有$(a++)+b$$=(a+b)++=$$(a+c)++=(a++)+c$</p>
+<h4 id="几种关系及性质"><a href="#几种关系及性质" class="headerlink" title="几种关系及性质"></a>几种关系及性质</h4><hr>
+<p>$假设集合A，以及基于A$$上的关系{\Bbb {R}}$<br>$自反：如果a是A的元素，那么$$&lt;a,a&gt;是R的元素 $<br>$反自反：如果a是A的元素，$$那么&lt;a,a&gt;不是R的元素 $<br>$对称：  如果&lt;a,b&gt;是R的元素，$$那么&lt;b,a&gt;是R的元素$<br>$反对称：如果&lt;a,b&gt;，&lt;b,a&gt;$$是R的元素，那么a,b相等$<br>$传递：  如果&lt;a,b&gt;，&lt;b,c&gt;$$是R的元素，那么&lt;a,c&gt;是R的元素$</p>
+<hr>
+<h4 id="正自然数定义：当且仅但不等于-0-得时候叫做正自然数。"><a href="#正自然数定义：当且仅但不等于-0-得时候叫做正自然数。" class="headerlink" title="正自然数定义：当且仅但不等于$0$得时候叫做正自然数。"></a><strong>正自然数定义</strong>：当且仅但不等于$0$得时候叫做正自然数。</h4><h4 id="自然数序的定义-设m-n为自然数-则m大于等于n，-写作-m-geq-n-或n-leq-m。-当且仅当存在某自然数a，-有m-n-a。-m严格大于n，写作m-gt-n或n-lt-m-当且仅当m-geq-n且m-neq-n。"><a href="#自然数序的定义-设m-n为自然数-则m大于等于n，-写作-m-geq-n-或n-leq-m。-当且仅当存在某自然数a，-有m-n-a。-m严格大于n，写作m-gt-n或n-lt-m-当且仅当m-geq-n且m-neq-n。" class="headerlink" title="自然数序的定义: $设m,n为自然数,$$则m大于等于n，$$写作 m\geq n 或n\leq m。$$当且仅当存在某自然数a，$$有m=n+a。$$m严格大于n，写作m&gt;n或n&lt;m$$,当且仅当m\geq n且m\neq n。$"></a><strong>自然数序的定义</strong>: $设m,n为自然数,$$则m大于等于n，$$写作 m\geq n 或n\leq m。$$当且仅当存在某自然数a，$$有m=n+a。$$m严格大于n，写作m&gt;n或n&lt;m$$,当且仅当m\geq n且m\neq n。$</h4><h4 id="正自然数序性质："><a href="#正自然数序性质：" class="headerlink" title="正自然数序性质："></a><strong>正自然数序性质：</strong></h4><p>①(自反性)$a\geq a$<br>②(传递性)$若a\geq b,b\geq c,则a\geq c$<br>③(反对称性)$若a\geq b,b\leq a,则a=c$<br>④(保序性)$a\geq b当且仅当a+c\geq b+c$<br>⑤$a&lt;b当且仅当a++\leq b$<br>⑥$a&lt;b当且仅当对于某正数d，b=a+d$<br>⑦(三歧性)$设a，b是自然数，那么下面三个恰有一个是真的$：$$a&lt;b, a=b ,a&gt;b$$</p>
+<h3 id="乘法"><a href="#乘法" class="headerlink" title="乘法"></a>乘法</h3><p>$\color{red}{乘法运算}$</p>
+<h4 id="自然数的乘法定义：-设是自然数，定义0-times-m-0。-定义-n-times-m-n-times-m-m。-（n-times-m-nm）"><a href="#自然数的乘法定义：-设是自然数，定义0-times-m-0。-定义-n-times-m-n-times-m-m。-（n-times-m-nm）" class="headerlink" title="自然数的乘法定义：$设是自然数，定义0\times m :=0。$$定义(n++)\times m:=(n\times m)+m。$$（n\times m :=nm）$"></a>自然数的乘法定义：$设是自然数，定义0\times m :=0。$$定义(n++)\times m:=(n\times m)+m。$$（n\times m :=nm）$</h4><h4 id="乘法性质："><a href="#乘法性质：" class="headerlink" title="乘法性质："></a>乘法性质：</h4><p>设a，b，c，n，m是自然数，则有<br>①$(\color{blue}{交换律})n\times m=m\times n$<br>②$(\color{blue}{无零因子}）设nm=0，$当且仅当$n，m中有一个为0.$<br>③$(\color{blue}{结合律}）(ab)c=a(bc)$<br>⑤$(\color{blue}{保序性}）设a&lt;b，c是正数，则 ac&lt;bc$<br>⑥$(\color{blue}{消去律}）设ac=bc，c不为0，则a=b$<br>####$\color{blue}{欧几里得算法}$<br>$设n是自然数$$且q是整数，则存在自然$$数m，r，使得0\leq   r&lt;q且n=mq+r$<br>####$\color{blue}{指数运算}$<br>$设m是自然数，m^0:=1,m^{n++}=m^n\times m$</p>
+<h3 id="整数"><a href="#整数" class="headerlink" title="整数"></a>整数</h3><h4 id="定义："><a href="#定义：" class="headerlink" title="定义："></a>定义：</h4><p>整数是形如 $a—b$ 的表达式,$a,b$是自然数$a—b=c—d$当且仅当$a+d=b+c$(自反性，对称性，传递性)</p>
+<h4 id="加法："><a href="#加法：" class="headerlink" title="加法："></a>加法：</h4><p>$(a—b)+(c—d)$:$=(a+c)—(b+d)$</p>
+<h4 id="乘法："><a href="#乘法：" class="headerlink" title="乘法："></a>乘法：</h4><p>$(a—b)$$\times$$(c—d):=$$(ac+bd)—$$(ad+bc)$<br>$n与n—0$同构<br>$x++:=x+1$<br>$—(a—b)=(b—a)$</p>
+<h4 id="三歧性"><a href="#三歧性" class="headerlink" title="三歧性"></a>三歧性</h4><p>①$x$是零<br>②$x$等于一个正的自然数$n$<br>③$x$是一个正自然数的负数$-n$</p>
+<h4 id="运算律（证明是交换环）"><a href="#运算律（证明是交换环）" class="headerlink" title="运算律（证明是交换环）"></a>运算律（证明是交换环）</h4><p>$x+y=y+x$<br>$(x+y)+z=x+(y+z)$<br>$x+0=0+x=x$<br>$x+(-x)=(-x)+x=0$<br>$xy=yx$<br>$(xy)z=x(yz)$<br>$x1=1x=x$<br>$x(y+z)=xy+xz$<br>$(y+z)x=yx+zx$</p>
+<h4 id="不含零除数"><a href="#不含零除数" class="headerlink" title="不含零除数"></a>不含零除数</h4><p>若$ab=0$，则$a=0$或$b=0$或$a$,$b$都为$0$。</p>
+<h4 id="整数顺序"><a href="#整数顺序" class="headerlink" title="整数顺序"></a>整数顺序</h4><p>①$a&gt;b$当且仅当$a-b$是正自然数<br>②加法保序<br>③正乘法保序<br>④负运算反序<br>⑤传递性<br>⑥三歧性</p>
+<h3 id="有理数"><a href="#有理数" class="headerlink" title="有理数"></a>有理数</h3><p>定义：$a//b=c//d$当且仅当$ad=bc$</p>
+<h4 id="加法乘法负运算"><a href="#加法乘法负运算" class="headerlink" title="加法乘法负运算"></a>加法乘法负运算</h4><h4 id="倒数"><a href="#倒数" class="headerlink" title="倒数"></a>倒数</h4><p>若$x=a//b $ 则 $x^{-1}=b//a$</p>
+<h4 id="运算律-证明是域"><a href="#运算律-证明是域" class="headerlink" title="运算律(证明是域)"></a>运算律(证明是域)</h4><p>$x+y=y+x$<br>$(x+y)+z=x+(y+z)$<br>$x+0=0+x=x$<br>$x+(-x)=(-x)+x=0$<br>$xy=yx$<br>$(xy)z=x(yz)$<br>$x1=1x=x$<br>$x(y+z)=xy+xz$<br>$(y+z)x=yx+zx$</p>
+<p>$xx^{-1}=x^{-1}x=1$</p>
+<h4 id="商"><a href="#商" class="headerlink" title="商"></a>商</h4><p>$a/b=a\times b^{-1}$</p>
+<h4 id="三歧性-1"><a href="#三歧性-1" class="headerlink" title="三歧性"></a>三歧性</h4><h4 id="顺序"><a href="#顺序" class="headerlink" title="顺序"></a>顺序</h4><h4 id="序的性质"><a href="#序的性质" class="headerlink" title="序的性质"></a>序的性质</h4><h3 id="无理数"><a href="#无理数" class="headerlink" title="无理数"></a>无理数</h3><h4 id="两个有理数中存在有理数（有理数稠密性）"><a href="#两个有理数中存在有理数（有理数稠密性）" class="headerlink" title="两个有理数中存在有理数（有理数稠密性）"></a>两个有理数中存在有理数（有理数稠密性）</h4><h4 id="不存在一个有理数-x-St-x-2-2"><a href="#不存在一个有理数-x-St-x-2-2" class="headerlink" title="不存在一个有理数 $x,St. x^2=2$."></a>不存在一个有理数 $x,St. x^2=2$.</h4><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><h3 id="公理：集合是对象"><a href="#公理：集合是对象" class="headerlink" title="公理：集合是对象"></a>公理：集合是对象</h3><h3 id="集合相等："><a href="#集合相等：" class="headerlink" title="集合相等："></a>集合相等：</h3><p>两个集合$A和B$是相等的$\Leftrightarrow$每个$A$中元素都是$B$中元素，反之亦然。(自反性，对称性，传递性)（无序性）</p>
+<h3 id="空集"><a href="#空集" class="headerlink" title="空集"></a>空集</h3><p>把不含任何元素的集合叫做空集$\emptyset$,$\forall x$都有$x\notin \emptyset.$</p>
+<h3 id="单元素集合"><a href="#单元素集合" class="headerlink" title="单元素集合"></a>单元素集合</h3><p>$\lbrace \emptyset \rbrace$</p>
+<h3 id="双并"><a href="#双并" class="headerlink" title="双并"></a>双并</h3><p>$x\in A\bigcup B$</p>
+<h3 id="子集"><a href="#子集" class="headerlink" title="子集"></a>子集</h3><h3 id="真子集"><a href="#真子集" class="headerlink" title="真子集"></a>真子集</h3><h3 id="分离公理"><a href="#分离公理" class="headerlink" title="分离公理"></a>分离公理</h3><h3 id="交"><a href="#交" class="headerlink" title="交"></a>交</h3><h3 id="差"><a href="#差" class="headerlink" title="差"></a>差</h3><h3 id="集合性质"><a href="#集合性质" class="headerlink" title="集合性质"></a>集合性质</h3><p>①最小元<br>②最大元<br>③相等<br>④交换律<br>⑤结合律<br>⑥分配律<br>⑦分拆律$A\bigcup (X\backslash A)=A$,$A\bigcap (X\backslash A)=\emptyset$<br>⑧$De Morgan律$: $X\backslash (A\bigcup B)=(X\backslash A)\bigcap (X\backslash B)$ $X\backslash (A\bigcap B)=(X\backslash A)\bigcup (X\backslash B)$<br>⑨替换<br>⑩无限</p>
+<h3 id="罗素悖论（理发师悖论）"><a href="#罗素悖论（理发师悖论）" class="headerlink" title="罗素悖论（理发师悖论）"></a>罗素悖论（理发师悖论）</h3><p>概括公理指出每一个集合都有一个性质可以描述，但是会有一个逻辑上的矛盾：$P(x)\Leftrightarrow x是一个集合，且x\notin x$;</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<div class="notification is-danger">
+    You forgot to set the <code>qrcode</code> for Alipay. Please set it in <code>_config.yml</code>.
+</div>
+
+                
+                
+<div class="notification is-danger">
+    You forgot to set the <code>qrcode</code> for Wechat. Please set it in <code>_config.yml</code>.
+</div>
+
+                
+                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
+
+<div class="notification is-danger">
+    You forgot to set the <code>business</code> and <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.
+</div>
+
+                
+                
+<div class="notification is-danger">
+    You forgot to set the <code>url</code> Patreon. Please set it in <code>_config.yml</code>.
+</div>
+
+                
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/11/11/analysis2/">
+                <span class="level-item">数学分析二数列、函数极限</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img class="" src="/images/avatar.png" alt="Your name">
+                    </figure>
+                    
+                    <p class="is-size-4 is-block">
+                        Your name
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        Your title
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>Your location</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        文章
+                    </p>
+                    <a href="/archives">
+                        <p class="title has-text-weight-normal">
+                            9
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        分类
+                    </p>
+                    <a href="/categories">
+                        <p class="title has-text-weight-normal">
+                            4
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        标签
+                    </p>
+                    <a href="/tags">
+                        <p class="title has-text-weight-normal">
+                            0
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://github.com/ppoffice" target="_blank">
+                关注我</a>
+        </div>
+        
+        
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Github" href="https://github.com/ppoffice">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Facebook" href="https://facebook.com">
+                
+                <i class="fab fa-facebook"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Twitter" href="https://twitter.com">
+                
+                <i class="fab fa-twitter"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Dribbble" href="https://dribbble.com">
+                
+                <i class="fab fa-dribbble"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="RSS" href="/">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+    
+        
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#实数与运算、集合与关系：">
+        <span class="has-mr-6">1</span>
+        <span>实数与运算、集合与关系：</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#实数">
+        <span class="has-mr-6">1.1</span>
+        <span>实数</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#自然数">
+        <span class="has-mr-6">1.1.1</span>
+        <span>自然数</span>
+        </a></li><li>
+        <a class="is-flex" href="#加法">
+        <span class="has-mr-6">1.1.2</span>
+        <span>加法</span>
+        </a></li><li>
+        <a class="is-flex" href="#乘法">
+        <span class="has-mr-6">1.1.3</span>
+        <span>乘法</span>
+        </a></li><li>
+        <a class="is-flex" href="#整数">
+        <span class="has-mr-6">1.1.4</span>
+        <span>整数</span>
+        </a></li><li>
+        <a class="is-flex" href="#有理数">
+        <span class="has-mr-6">1.1.5</span>
+        <span>有理数</span>
+        </a></li><li>
+        <a class="is-flex" href="#无理数">
+        <span class="has-mr-6">1.1.6</span>
+        <span>无理数</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#集合">
+        <span class="has-mr-6">1.2</span>
+        <span>集合</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#公理：集合是对象">
+        <span class="has-mr-6">1.2.1</span>
+        <span>公理：集合是对象</span>
+        </a></li><li>
+        <a class="is-flex" href="#集合相等：">
+        <span class="has-mr-6">1.2.2</span>
+        <span>集合相等：</span>
+        </a></li><li>
+        <a class="is-flex" href="#空集">
+        <span class="has-mr-6">1.2.3</span>
+        <span>空集</span>
+        </a></li><li>
+        <a class="is-flex" href="#单元素集合">
+        <span class="has-mr-6">1.2.4</span>
+        <span>单元素集合</span>
+        </a></li><li>
+        <a class="is-flex" href="#双并">
+        <span class="has-mr-6">1.2.5</span>
+        <span>双并</span>
+        </a></li><li>
+        <a class="is-flex" href="#子集">
+        <span class="has-mr-6">1.2.6</span>
+        <span>子集</span>
+        </a></li><li>
+        <a class="is-flex" href="#真子集">
+        <span class="has-mr-6">1.2.7</span>
+        <span>真子集</span>
+        </a></li><li>
+        <a class="is-flex" href="#分离公理">
+        <span class="has-mr-6">1.2.8</span>
+        <span>分离公理</span>
+        </a></li><li>
+        <a class="is-flex" href="#交">
+        <span class="has-mr-6">1.2.9</span>
+        <span>交</span>
+        </a></li><li>
+        <a class="is-flex" href="#差">
+        <span class="has-mr-6">1.2.10</span>
+        <span>差</span>
+        </a></li><li>
+        <a class="is-flex" href="#集合性质">
+        <span class="has-mr-6">1.2.11</span>
+        <span>集合性质</span>
+        </a></li><li>
+        <a class="is-flex" href="#罗素悖论（理发师悖论）">
+        <span class="has-mr-6">1.2.12</span>
+        <span>罗素悖论（理发师悖论）</span>
+        </a></li></ul></li></ul></li></ul>
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            链接
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://hexo.io" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Hexo</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">hexo.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://github.com/ppoffice" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">PPOffice</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">github.com</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                分类
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/categories/%E5%85%B6%E5%AE%83/">
+            <span class="level-start">
+                <span class="level-item">其它</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/%E6%95%B0%E5%AD%A6/">
+            <span class="level-start">
+                <span class="level-item">数学</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">5</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/%E7%BB%8F%E5%85%B8%E7%A0%94%E8%AF%BB/">
+            <span class="level-start">
+                <span class="level-item">经典研读</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/%E8%AF%BB%E4%B9%A6/">
+            <span class="level-start">
+                <span class="level-item">读书</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+            <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/11/15/analysis1/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="数学分析一实数、集合">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-15T11:56:00.000Z">2019-11-15</time></div>
+                    <a href="/2019/11/15/analysis1/" class="title has-link-black-ter is-size-6 has-text-weight-normal">数学分析一实数、集合</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/11/11/analysis2/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="数学分析二数列、函数极限">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-11T02:52:00.000Z">2019-11-11</time></div>
+                    <a href="/2019/11/11/analysis2/" class="title has-link-black-ter is-size-6 has-text-weight-normal">数学分析二数列、函数极限</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/11/11/books/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="书单">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-11T02:52:00.000Z">2019-11-11</time></div>
+                    <a href="/2019/11/11/books/" class="title has-link-black-ter is-size-6 has-text-weight-normal">书单</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E8%AF%BB%E4%B9%A6/">读书</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/11/11/lecture/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="文化苦旅">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-11T02:52:00.000Z">2019-11-11</time></div>
+                    <a href="/2019/11/11/lecture/" class="title has-link-black-ter is-size-6 has-text-weight-normal">文化苦旅</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E7%BB%8F%E5%85%B8%E7%A0%94%E8%AF%BB/">经典研读</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/11/11/ode/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="微分方程">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-11T02:52:00.000Z">2019-11-11</time></div>
+                    <a href="/2019/11/11/ode/" class="title has-link-black-ter is-size-6 has-text-weight-normal">微分方程</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">8</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+            </div>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
+    
+        <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/11/15/analysis1/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="数学分析一实数、集合">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-15T11:56:00.000Z">2019-11-15</time></div>
+                    <a href="/2019/11/15/analysis1/" class="title has-link-black-ter is-size-6 has-text-weight-normal">数学分析一实数、集合</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/11/11/analysis2/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="数学分析二数列、函数极限">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-11T02:52:00.000Z">2019-11-11</time></div>
+                    <a href="/2019/11/11/analysis2/" class="title has-link-black-ter is-size-6 has-text-weight-normal">数学分析二数列、函数极限</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/11/11/books/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="书单">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-11T02:52:00.000Z">2019-11-11</time></div>
+                    <a href="/2019/11/11/books/" class="title has-link-black-ter is-size-6 has-text-weight-normal">书单</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E8%AF%BB%E4%B9%A6/">读书</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/11/11/lecture/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="文化苦旅">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-11T02:52:00.000Z">2019-11-11</time></div>
+                    <a href="/2019/11/11/lecture/" class="title has-link-black-ter is-size-6 has-text-weight-normal">文化苦旅</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E7%BB%8F%E5%85%B8%E7%A0%94%E8%AF%BB/">经典研读</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/11/11/ode/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="微分方程">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-11T02:52:00.000Z">2019-11-11</time></div>
+                    <a href="/2019/11/11/ode/" class="title has-link-black-ter is-size-6 has-text-weight-normal">微分方程</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">8</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo.svg" alt="数学分析一实数、集合" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 BabyQ&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+<script>
+var IcarusThemeSettings = {
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
+
+
+    
+    
+<script src="/js/animation.js"></script>
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="/js/gallery.js" defer></script>
+
+    
+    
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/" target="_blank" rel="noopener">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+    
+    
+<a id="back-to-top" title="回到顶端" href="javascript:;" target="_blank" rel="noopener">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>
