@@ -7,15 +7,18 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>BabyQ</title>
+<title>数学分析二数列、函数极限 - BabyQ</title>
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="BabyQ">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;page&#x2F;2&#x2F;index.html">
+    <meta name="description" content="这里主要参考华东师大数学分析第二、三章。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数学分析二数列、函数极限">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;14&#x2F;analysis2&#x2F;index.html">
 <meta property="og:site_name" content="BabyQ">
+<meta property="og:description" content="这里主要参考华东师大数学分析第二、三章。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
+<meta property="og:updated_time" content="2019-11-22T08:49:53.737Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
 
@@ -75,7 +78,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/icon.svg" alt="BabyQ" height="28">
+                <img src="/images/icon.svg" alt="数学分析二数列、函数极限" height="28">
             
             </a>
         </div>
@@ -97,6 +100,10 @@
             <div class="navbar-end">
                 
                 
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;" target="_blank" rel="noopener">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;" target="_blank" rel="noopener">
                     <i class="fas fa-search"></i>
@@ -111,14 +118,13 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main">
-    
 <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-11-11T02:52:00.000Z">2019-11-11</time>
+                <time class="level-item has-text-grey" datetime="2019-11-14T02:52:00.000Z">2019-11-14</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a>
@@ -128,7 +134,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分钟 读完 (大约 431 个字)
+                    2 分钟 读完 (大约 281 个字)
                 </span>
                 
                 
@@ -137,21 +143,16 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/11/11/ode/">微分方程</a>
+                数学分析二数列、函数极限
             
         </h1>
         <div class="content">
-            <p>参考书籍：《常微分方程教程》 第二版 丁同仁<br>Myint-U, T., Partial Differential Equations for Scientists and Engineers, 3rd. ed., 1988<br></p>
+            <p>这里主要参考华东师大数学分析第二、三章。<br> <a id="more"></a></p>
+<h1 id="数列"><a href="#数列" class="headerlink" title="数列"></a>数列</h1><h2 id="定义："><a href="#定义：" class="headerlink" title="定义："></a>定义：</h2><p>$f:$<strong>$\Bbb N_+$</strong>$\rightarrow$ $\Bbb R$,可写为 $a_1,a_2,…，a_n，…，$或$\lbrace a_n\rbrace.$</p>
+<h2 id="收敛数列："><a href="#收敛数列：" class="headerlink" title="收敛数列："></a>收敛数列：</h2><p>当$n$取无穷大时，$a_n$无限接近于常数$a$.<br>设$\lbrace a_n\rbrace$为数列, $a$为定数，若 $\forall \varepsilon$, $\exists$正整数N,St. $n&gt;N$时，有<br>$$\mid a_n-a\mid&lt;\varepsilon$$<br>则称数列$\lbrace a_n\rbrace$收敛于$a$，定数$a$称为数列$\lbrace a_n\rbrace$的极限，记作$$ \lim_{n \to +\infty}a_n=a \quad or \quad a_n \to a(n\to \infty) $$<br>*证明<br>$\lim\limits_{n\to\infty}\frac1{n^a}=0 $$\quad(n为正数)$<br>$n&gt;N=\frac1{\varepsilon^\frac1a}+1$<br>$\lim\limits_{n\to\infty}\frac{3n^2}{n^2-3}=3$<br>$\frac{3n^2}{n^2-3}&gt;$<br>$\lim\limits_{n\to\infty}q^n=0$<br>$\lim\limits_ {n \to \infty}a^{\frac{1}{n}}=1\quad (a&gt;0)$<br>$\lim\limits_ {n \to \infty}n^{\frac{1}{n}}=1\quad (a&gt;0)$<br>令$n^{\frac{1}{n}}=1+h_n$,则 $n=(1+h_n)^n&gt;\frac{n^2-n}{2}h_n^2$, 则$h_n&lt;{\frac{2}{n-1}}^\frac12$,$1+h_n&lt;$<br><br>$\forall\varepsilon,$<br>$\lim\limits_ {n \to \infty}\sqrt n(\sqrt {n+1}-\sqrt n)=\frac12$<br>解：$\sqrt n(\sqrt {n+1}-\sqrt n)$$=\frac{\sqrt n}{(\sqrt {n-1}+\sqrt n)}=$$\frac{1}{(\sqrt {\frac{n-1}{n}}+1)}=\frac12$<br>有界单调数列一定有极限</p>
+
         </div>
         
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/11/11/ode/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
         
         
     </div>
@@ -161,186 +162,48 @@
 
 
 
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-11-11T02:52:00.000Z">2019-11-11</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    1 分钟 读完 (大约 126 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/11/11/probability2/">概率论二</a>
-            
-        </h1>
-        <div class="content">
-            <p>参考书籍：《概率论与数理统计》 许钟好<br></p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/11/11/probability2/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-11-11T02:52:00.000Z">2019-11-11</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E7%BB%8F%E5%85%B8%E7%A0%94%E8%AF%BB/">经典研读</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    几秒 读完 (大约 51 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/11/11/the_wealth_of_nations/">国富论</a>
-            
-        </h1>
-        <div class="content">
-            <p>参考书籍：《国富论》 亚当斯密<br></p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/11/11/the_wealth_of_nations/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-11-16T10:11:25.000Z">2018-11-16</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%85%B6%E5%AE%83/">其它</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    9 分钟 读完 (大约 1306 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2018/11/16/first/">人生到处知何似</a>
-            
-        </h1>
-        <div class="content">
-            <p>人的一生究竟是要怎样度过呢？<br></p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2018/11/16/first/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-    
 <div class="card card-transparent">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/">上一页</a>
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/11/15/analysis1/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">数学分析一实数、集合</span>
+            </a>
         </div>
-        <div class="pagination-next is-invisible is-hidden-mobile">
-            <a class="is-flex-grow has-text-black-ter" href="/page/3/">下一页</a>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/11/11/lecture/">
+                <span class="level-item">文化苦旅</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
         </div>
-        <ul class="pagination-list is-hidden-mobile">
-            
-            <li><a class="pagination-link has-text-black-ter" href="/">1</a></li>
-            
-            <li><a class="pagination-link is-current" href="/page/2/">2</a></li>
-            
-        </ul>
-    </nav>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: 'U7aslEs7sRuKEsGnLhVm5YEt-MdYXbMMI',
+        app_key: 'lPdQmCPf91n2f2usJl091GWs',
+        placeholder: 'ヾﾉ≧∀≦)o 来呀！快活呀！~'
+    });
+</script>
+
+    </div>
 </div>
 </div>
                 
@@ -413,6 +276,30 @@
 </div>
     
         
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#数列">
+        <span class="has-mr-6">1</span>
+        <span>数列</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#定义：">
+        <span class="has-mr-6">1.1</span>
+        <span>定义：</span>
+        </a></li><li>
+        <a class="is-flex" href="#收敛数列：">
+        <span class="has-mr-6">1.2</span>
+        <span>收敛数列：</span>
+        </a></li></ul></li></ul>
+            </div>
+        </div>
+    </div>
+
     
         <div class="card widget">
     <div class="card-content">
