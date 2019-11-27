@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 4.0.0" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>四子棋 - BabyQ</title>
+
+
+    <meta name="description" content="这是java课程上的一个作业,制作四字旗游戏.我加入了三子警告.欢迎提出改进意见">
+<meta property="og:type" content="article">
+<meta property="og:title" content="四子棋">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;27&#x2F;ConnectFour&#x2F;index.html">
+<meta property="og:site_name" content="BabyQ">
+<meta property="og:description" content="这是java课程上的一个作业,制作四字旗游戏.我加入了三子警告.欢迎提出改进意见">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
+<meta property="og:updated_time" content="2019-11-27T05:54:14.968Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
+
+
+
+
+
+
+
+<link rel="icon" href="/images/favicon.ico">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+<style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+    
+    
+    
+    
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+    
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+    
+    
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/icon.svg" alt="四子棋" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item"
+                href="/">主页</a>
+                
+                <a class="navbar-item"
+                href="/archives">时间线</a>
+                
+                <a class="navbar-item"
+                href="/categories">分类</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;" target="_blank" rel="noopener">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;" target="_blank" rel="noopener">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-11-27T05:32:00.000Z">2019-11-27</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/java/">java</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 分钟 读完 (大约 1057 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                四子棋
+            
+        </h1>
+        <div class="content">
+            <p>这是java课程上的一个作业,制作四字旗游戏.我加入了三子警告.欢迎提出改进意见<br> <a id="more"></a><br>规则:双方必须轮流把一枚己棋投入开口，让棋子因地心引力落下在底部或其他棋子上。<br>当己方四枚棋子以纵、横、斜方向连成一线时获胜。<br>棋盘满棋时，无任何连成四子，则平手.</p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br></pre></td><td class="code"><pre><span class="line">	<span class="hljs-keyword">import</span> java.util.*;</span><br><span class="line">	<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ConnectFour</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;</span><br><span class="line">			Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);</span><br><span class="line">			String[][] chess = <span class="hljs-keyword">new</span> String[<span class="hljs-number">6</span>][<span class="hljs-number">7</span>];</span><br><span class="line">			<span class="hljs-keyword">int</span> round = <span class="hljs-number">1</span>;</span><br><span class="line">			String[] symbol = &#123;<span class="hljs-string">"×"</span>,<span class="hljs-string">"○"</span>&#125;;</span><br><span class="line">			</span><br><span class="line">			<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> a=<span class="hljs-number">0</span>;a&lt;chess.length;a++)&#123;</span><br><span class="line">				<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> b=<span class="hljs-number">0</span>;b&lt;chess[<span class="hljs-number">0</span>].length;b++)</span><br><span class="line">				chess[a][b] = <span class="hljs-string">" "</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println(<span class="hljs-string">"-------------------------四子棋-------------------------"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">"兩人玩，每人各據一符號，猜拳贏先選擇您要的位置擺放符號，依序你下完，換我下\n"</span> +</span><br><span class="line">					           <span class="hljs-string">"直到相同符號能夠連成四子一直線即獲勝(縱.橫.斜三相同符號一直線均可，先達成者贏)\n"</span> +</span><br><span class="line">					           <span class="hljs-string">"，應盡阻擋對方連成四符號一直線唷!"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">"--------------------------------------------------------"</span>);</span><br><span class="line">			System.out.println();</span><br><span class="line">			</span><br><span class="line">			<span class="hljs-comment">//先畫參考圖</span></span><br><span class="line">			System.out.println(<span class="hljs-string">"Y座標"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">" ↓"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">"   ┌───┬───┬───┬───┬───┬───┬───┐"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">" 6 │   │   │   │   │   │   │   │"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">"   ├───┼───┼───┼───┼───┼───┼───┤"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">" 5 │   │   │   │   │   │   │   │"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">"   ├───┼───┼───┼───┼───┼───┼───┤"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">" 4 │   │   │   │   │   │   │   │"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">"   ├───┼───┼───┼───┼───┼───┼───┤"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">" 3 │   │   │   │   │   │   │   │"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">"   ├───┼───┼───┼───┼───┼───┼───┤"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">" 2 │   │   │   │   │   │   │   │"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">"   ├───┼───┼───┼───┼───┼───┼───┤"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">" 1 │   │   │   │   │   │   │   │"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">"   └───┴───┴───┴───┴───┴───┴───┘"</span>);	</span><br><span class="line">			System.out.println(<span class="hljs-string">"     1   2   3   4   5   6   7    ← X座標"</span>);</span><br><span class="line">			System.out.println(<span class="hljs-string">"--------------------------------------------------------"</span>);</span><br><span class="line">			System.out.println();</span><br><span class="line">			<span class="hljs-keyword">while</span>(<span class="hljs-keyword">true</span>)&#123;		</span><br><span class="line">				<span class="hljs-comment">//座標 (x-1)*1+(？-1)*7   剛好對應到   陣列的元素代碼</span></span><br><span class="line">				System.out.println(<span class="hljs-string">"請輸入您要擺放的位置"</span>);</span><br><span class="line">				<span class="hljs-keyword">while</span>(<span class="hljs-keyword">true</span>)&#123;</span><br><span class="line">					System.out.print(<span class="hljs-string">"X座標： "</span>);</span><br><span class="line">					<span class="hljs-keyword">int</span> keyinX = sc.nextInt();</span><br><span class="line">					<span class="hljs-keyword">if</span>(!(keyinX&gt;=<span class="hljs-number">1</span> &amp;&amp; keyinX&lt;=<span class="hljs-number">7</span>))&#123;</span><br><span class="line">						System.out.println(<span class="hljs-string">"輸入錯誤,重新輸入"</span>);</span><br><span class="line">						<span class="hljs-keyword">continue</span>;</span><br><span class="line">					&#125;</span><br><span class="line">					</span><br><span class="line">					<span class="hljs-keyword">int</span> number = (keyinX-<span class="hljs-number">1</span>);</span><br><span class="line">					<span class="hljs-keyword">if</span>(!chess[<span class="hljs-number">5</span>][number].equals(<span class="hljs-string">" "</span>))&#123;</span><br><span class="line">						System.out.println(<span class="hljs-string">"此處已經滿棋了!換一個地方 好么!"</span>);</span><br><span class="line">						<span class="hljs-keyword">break</span>;</span><br><span class="line">					&#125;</span><br><span class="line">					<span class="hljs-keyword">int</span> n =<span class="hljs-number">0</span>;</span><br><span class="line">					<span class="hljs-keyword">while</span>(!chess[n][number].equals(<span class="hljs-string">" "</span>))&#123;</span><br><span class="line">					  n++;</span><br><span class="line">					&#125;</span><br><span class="line">					<span class="hljs-keyword">if</span>(round % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>)&#123;</span><br><span class="line">						chess[n][number] = <span class="hljs-string">"×"</span>;	</span><br><span class="line">					&#125;<span class="hljs-keyword">else</span>&#123;</span><br><span class="line">						chess[n][number] = <span class="hljs-string">"○"</span>;</span><br><span class="line">					&#125;</span><br><span class="line">						<span class="hljs-keyword">break</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			<span class="hljs-comment">//重繪圖</span></span><br><span class="line">				System.out.println(<span class="hljs-string">" ↓"</span>);</span><br><span class="line">				System.out.println(<span class="hljs-string">"   ┌───┬───┬───┬───┬───┬───┬───┐"</span>);</span><br><span class="line">				System.out.println(<span class="hljs-string">" 6 │ "</span>+chess[<span class="hljs-number">5</span>][<span class="hljs-number">0</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">5</span>][<span class="hljs-number">1</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">5</span>][<span class="hljs-number">2</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">5</span>][<span class="hljs-number">3</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">5</span>][<span class="hljs-number">4</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">5</span>][<span class="hljs-number">5</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">5</span>][<span class="hljs-number">6</span>]+<span class="hljs-string">" │ "</span>);</span><br><span class="line">				System.out.println(<span class="hljs-string">"   ├───┼───┼───┼───┼───┼───┼───┤"</span>);</span><br><span class="line">				System.out.println(<span class="hljs-string">" 5 │ "</span>+chess[<span class="hljs-number">4</span>][<span class="hljs-number">0</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">4</span>][<span class="hljs-number">1</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">4</span>][<span class="hljs-number">2</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">4</span>][<span class="hljs-number">3</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">4</span>][<span class="hljs-number">4</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">4</span>][<span class="hljs-number">5</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">4</span>][<span class="hljs-number">6</span>]+<span class="hljs-string">" │ "</span>);</span><br><span class="line">				System.out.println(<span class="hljs-string">"   ├───┼───┼───┼───┼───┼───┼───┤"</span>);</span><br><span class="line">				System.out.println(<span class="hljs-string">" 4 │ "</span>+chess[<span class="hljs-number">3</span>][<span class="hljs-number">0</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">3</span>][<span class="hljs-number">1</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">3</span>][<span class="hljs-number">2</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">3</span>][<span class="hljs-number">3</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">3</span>][<span class="hljs-number">4</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">3</span>][<span class="hljs-number">5</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">3</span>][<span class="hljs-number">6</span>]+<span class="hljs-string">" │ "</span>);</span><br><span class="line">				System.out.println(<span class="hljs-string">"   ├───┼───┼───┼───┼───┼───┼───┤"</span>);</span><br><span class="line">				System.out.println(<span class="hljs-string">" 3 │ "</span>+chess[<span class="hljs-number">2</span>][<span class="hljs-number">0</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">2</span>][<span class="hljs-number">1</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">2</span>][<span class="hljs-number">2</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">2</span>][<span class="hljs-number">3</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">2</span>][<span class="hljs-number">4</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">2</span>][<span class="hljs-number">5</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">2</span>][<span class="hljs-number">6</span>]+<span class="hljs-string">" │ "</span>);</span><br><span class="line">				System.out.println(<span class="hljs-string">"   ├───┼───┼───┼───┼───┼───┼───┤"</span>);</span><br><span class="line">				System.out.println(<span class="hljs-string">" 2 │ "</span>+chess[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">1</span>][<span class="hljs-number">1</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">1</span>][<span class="hljs-number">2</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">1</span>][<span class="hljs-number">3</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">1</span>][<span class="hljs-number">4</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">1</span>][<span class="hljs-number">5</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">1</span>][<span class="hljs-number">6</span>]+<span class="hljs-string">" │ "</span>);</span><br><span class="line">				System.out.println(<span class="hljs-string">"   ├───┼───┼───┼───┼───┼───┼───┤"</span>);</span><br><span class="line">				System.out.println(<span class="hljs-string">" 1 │ "</span>+chess[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">0</span>][<span class="hljs-number">2</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">0</span>][<span class="hljs-number">3</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">0</span>][<span class="hljs-number">4</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">0</span>][<span class="hljs-number">5</span>]+<span class="hljs-string">" │ "</span>+chess[<span class="hljs-number">0</span>][<span class="hljs-number">6</span>]+<span class="hljs-string">" │ "</span>);</span><br><span class="line">				System.out.println(<span class="hljs-string">"   └───┴───┴───┴───┴───┴───┴───┘"</span>);	</span><br><span class="line">				System.out.println(<span class="hljs-string">"     1   2   3   4   5   6   7    ← X座標"</span>);</span><br><span class="line">	</span><br><span class="line">			<span class="hljs-comment">//判斷輸贏</span></span><br><span class="line">				<span class="hljs-keyword">boolean</span> check = <span class="hljs-keyword">false</span>;</span><br><span class="line">				<span class="hljs-comment">//橫直線	</span></span><br><span class="line">				<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> n1=<span class="hljs-number">0</span>;n1&lt;chess.length;n1++)&#123;</span><br><span class="line">					<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> n2=<span class="hljs-number">0</span>;n2&lt;<span class="hljs-number">4</span>;n2++)</span><br><span class="line">						<span class="hljs-keyword">if</span>(chess[n1][<span class="hljs-number">0</span>+n2].equals(chess[n1][<span class="hljs-number">1</span>+n2])&amp;&amp;chess[n1][<span class="hljs-number">0</span>+n2].equals(chess[n1][<span class="hljs-number">2</span>+n2])&amp;&amp;chess[n1][<span class="hljs-number">0</span>+n2].equals(chess[n1][<span class="hljs-number">3</span>+n2])&amp;&amp; !(chess[n1][<span class="hljs-number">0</span>+n2].equals(<span class="hljs-string">" "</span>)))	</span><br><span class="line">					check = <span class="hljs-keyword">true</span>;						</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="hljs-comment">//豎直線</span></span><br><span class="line">				<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> n1=<span class="hljs-number">0</span>;n1&lt;chess[<span class="hljs-number">0</span>].length;n1++)&#123;</span><br><span class="line">					<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> n2=<span class="hljs-number">0</span>;n2&lt;<span class="hljs-number">3</span>;n2++)</span><br><span class="line">						<span class="hljs-keyword">if</span>(chess[<span class="hljs-number">0</span>+n2][n1].equals(chess[<span class="hljs-number">1</span>+n2][n1])&amp;&amp;chess[<span class="hljs-number">0</span>+n2][n1].equals(chess[<span class="hljs-number">2</span>+n2][n1])&amp;&amp;chess[<span class="hljs-number">0</span>+n2][n1].equals(chess[<span class="hljs-number">3</span>+n2][n1])&amp;&amp; !(chess[<span class="hljs-number">0</span>+n2][n1].equals(<span class="hljs-string">" "</span>)))	</span><br><span class="line">					check = <span class="hljs-keyword">true</span>;						</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="hljs-comment">//右上斜直線</span></span><br><span class="line">				<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> n1=<span class="hljs-number">0</span>;n1&lt;<span class="hljs-number">3</span>;n1++)&#123;</span><br><span class="line">					<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> n2=<span class="hljs-number">0</span>;n2&lt;<span class="hljs-number">4</span>;n2++)</span><br><span class="line">						<span class="hljs-keyword">if</span>(chess[<span class="hljs-number">0</span>+n1][<span class="hljs-number">0</span>+n2].equals(chess[<span class="hljs-number">1</span>+n1][<span class="hljs-number">1</span>+n2])&amp;&amp;chess[<span class="hljs-number">0</span>+n1][<span class="hljs-number">0</span>+n2].equals(chess[<span class="hljs-number">2</span>+n1][<span class="hljs-number">2</span>+n2])&amp;&amp;chess[<span class="hljs-number">0</span>+n1][<span class="hljs-number">0</span>+n2].equals(chess[<span class="hljs-number">3</span>+n1][<span class="hljs-number">3</span>+n2])&amp;&amp; !(chess[<span class="hljs-number">0</span>+n1][<span class="hljs-number">0</span>+n2].equals(<span class="hljs-string">" "</span>)))	</span><br><span class="line">					check = <span class="hljs-keyword">true</span>;						</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="hljs-comment">//右下斜直線</span></span><br><span class="line">				<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> n1=<span class="hljs-number">3</span>;n1&lt;chess.length;n1++)&#123;</span><br><span class="line">					<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> n2=<span class="hljs-number">0</span>;n2&lt;<span class="hljs-number">3</span>;n2++)</span><br><span class="line">						<span class="hljs-keyword">if</span>(chess[<span class="hljs-number">0</span>+n1][<span class="hljs-number">0</span>+n2].equals(chess[n1-<span class="hljs-number">1</span>][n2+<span class="hljs-number">1</span>])&amp;&amp;chess[<span class="hljs-number">0</span>+n1][<span class="hljs-number">0</span>+n2].equals(chess[n1-<span class="hljs-number">2</span>][<span class="hljs-number">2</span>+n2])&amp;&amp;chess[<span class="hljs-number">0</span>+n1][<span class="hljs-number">0</span>+n2].equals(chess[n1-<span class="hljs-number">3</span>][<span class="hljs-number">3</span>+n2])&amp;&amp; !(chess[<span class="hljs-number">0</span>+n1][<span class="hljs-number">0</span>+n2].equals(<span class="hljs-string">" "</span>)))	</span><br><span class="line">					check = <span class="hljs-keyword">true</span>;						</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="hljs-keyword">if</span>(check == <span class="hljs-keyword">true</span>)&#123;</span><br><span class="line">					System.out.print(<span class="hljs-string">"Congratulation！！！㊗️玩家 "</span>+symbol[round % <span class="hljs-number">2</span>]);	<span class="hljs-comment">//判斷為當局下棋者得勝</span></span><br><span class="line">					System.out.println(<span class="hljs-string">" 獲勝"</span>);</span><br><span class="line">					<span class="hljs-keyword">break</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			<span class="hljs-comment">//預測輸贏</span></span><br><span class="line">				<span class="hljs-keyword">boolean</span> check1 = <span class="hljs-keyword">false</span>;</span><br><span class="line">				<span class="hljs-comment">//橫直線	</span></span><br><span class="line">				<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> n1=<span class="hljs-number">0</span>;n1&lt;chess.length;n1++)&#123;</span><br><span class="line">					<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> n2=<span class="hljs-number">0</span>;n2&lt;<span class="hljs-number">5</span>;n2++)</span><br><span class="line">						<span class="hljs-keyword">if</span>(chess[n1][<span class="hljs-number">0</span>+n2].equals(chess[n1][<span class="hljs-number">1</span>+n2])&amp;&amp;chess[n1][<span class="hljs-number">0</span>+n2].equals(chess[n1][<span class="hljs-number">2</span>+n2])&amp;&amp; !(chess[n1][<span class="hljs-number">0</span>+n2].equals(<span class="hljs-string">" "</span>)))	</span><br><span class="line">					check1 = <span class="hljs-keyword">true</span>;						</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="hljs-comment">//豎直線</span></span><br><span class="line">				<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> n1=<span class="hljs-number">0</span>;n1&lt;chess[<span class="hljs-number">0</span>].length;n1++)&#123;</span><br><span class="line">					<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> n2=<span class="hljs-number">0</span>;n2&lt;<span class="hljs-number">4</span>;n2++)</span><br><span class="line">						<span class="hljs-keyword">if</span>(chess[<span class="hljs-number">0</span>+n2][n1].equals(chess[<span class="hljs-number">1</span>+n2][n1])&amp;&amp;chess[<span class="hljs-number">0</span>+n2][n1].equals(chess[<span class="hljs-number">2</span>+n2][n1])&amp;&amp; !(chess[<span class="hljs-number">0</span>+n2][n1].equals(<span class="hljs-string">" "</span>)))	</span><br><span class="line">					check1 = <span class="hljs-keyword">true</span>;						</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="hljs-comment">//右上斜直線</span></span><br><span class="line">				<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> n1=<span class="hljs-number">0</span>;n1&lt;<span class="hljs-number">4</span>;n1++)&#123;</span><br><span class="line">					<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> n2=<span class="hljs-number">0</span>;n2&lt;<span class="hljs-number">5</span>;n2++)</span><br><span class="line">						<span class="hljs-keyword">if</span>(chess[<span class="hljs-number">0</span>+n1][<span class="hljs-number">0</span>+n2].equals(chess[<span class="hljs-number">1</span>+n1][<span class="hljs-number">1</span>+n2])&amp;&amp;chess[<span class="hljs-number">0</span>+n1][<span class="hljs-number">0</span>+n2].equals(chess[<span class="hljs-number">2</span>+n1][<span class="hljs-number">2</span>+n2])&amp;&amp; !(chess[<span class="hljs-number">0</span>+n1][<span class="hljs-number">0</span>+n2].equals(<span class="hljs-string">" "</span>)))	</span><br><span class="line">					check1 = <span class="hljs-keyword">true</span>;						</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="hljs-comment">//右下斜直線</span></span><br><span class="line">				<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> n1=<span class="hljs-number">2</span>;n1&lt;chess.length;n1++)&#123;</span><br><span class="line">					<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> n2=<span class="hljs-number">0</span>;n2&lt;<span class="hljs-number">4</span>;n2++)</span><br><span class="line">						<span class="hljs-keyword">if</span>(chess[<span class="hljs-number">0</span>+n1][<span class="hljs-number">0</span>+n2].equals(chess[n1-<span class="hljs-number">1</span>][n2+<span class="hljs-number">1</span>])&amp;&amp;chess[<span class="hljs-number">0</span>+n1][<span class="hljs-number">0</span>+n2].equals(chess[n1-<span class="hljs-number">2</span>][<span class="hljs-number">2</span>+n2])&amp;&amp; !(chess[<span class="hljs-number">0</span>+n1][<span class="hljs-number">0</span>+n2].equals(<span class="hljs-string">" "</span>)))	</span><br><span class="line">					check1 = <span class="hljs-keyword">true</span>;						</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="hljs-keyword">if</span>(check1 == <span class="hljs-keyword">true</span>)&#123;</span><br><span class="line">					System.out.print(<span class="hljs-string">"注意⚠️！！！！！玩家 "</span>+symbol[round % <span class="hljs-number">2</span>]);	<span class="hljs-comment">//判斷為當局下棋者即將得勝</span></span><br><span class="line">					System.out.println(<span class="hljs-string">" 即將獲勝"</span>);</span><br><span class="line">			</span><br><span class="line">				&#125;</span><br><span class="line">			<span class="hljs-comment">//判斷平手，擺此處是為了最後也能顯示圖...否則習慣往後擺放</span></span><br><span class="line">				<span class="hljs-keyword">int</span> count = <span class="hljs-number">0</span>;	<span class="hljs-comment">//計數目前場上的棋子數，如滿42棋 沒勝利 則平手..</span></span><br><span class="line">				<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> a=<span class="hljs-number">0</span>;a&lt;chess.length;a++)&#123;</span><br><span class="line">					<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> b=<span class="hljs-number">0</span>;b&lt;chess[<span class="hljs-number">0</span>].length;b++) &#123;</span><br><span class="line">						<span class="hljs-keyword">if</span>(!(chess[a][b].equals(<span class="hljs-string">" "</span>)))&#123;</span><br><span class="line">						count++;</span><br><span class="line">						&#125;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="hljs-keyword">if</span>(count==<span class="hljs-number">42</span>)&#123;</span><br><span class="line">					System.out.println(<span class="hljs-string">"平手"</span>);</span><br><span class="line">					<span class="hljs-keyword">break</span>;</span><br><span class="line">				&#125;</span><br><span class="line">				</span><br><span class="line">				System.out.println(<span class="hljs-string">"--------------------------------------------------------"</span>);</span><br><span class="line">				System.out.println();</span><br><span class="line">				round++;<span class="hljs-comment">//準備到下一回合</span></span><br><span class="line">			</span><br><span class="line">			&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>示例图如下:</p>
+<p> <img src="https://i.loli.net/2019/11/27/XwQ7y1xYHcnFDq3.png" alt="ConnectFour.png"></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/11/15/analysis1/">
+                <span class="level-item">数学分析一实数、集合</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: 'U7aslEs7sRuKEsGnLhVm5YEt-MdYXbMMI',
+        app_key: 'lPdQmCPf91n2f2usJl091GWs',
+        placeholder: 'ヾﾉ≧∀≦)o 来呀！快活呀！~'
+    });
+</script>
+
+    </div>
+</div>
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-1 column-left ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img class="is-rounded" src="/images/icon.svg" alt="BabyQ">
+                    </figure>
+                    
+                    <p class="is-size-4 is-block">
+                        BabyQ
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        知也无涯
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>Shanghai, China</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        文章
+                    </p>
+                    <a href="/archives">
+                        <p class="title has-text-weight-normal">
+                            10
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        分类
+                    </p>
+                    <a href="/categories">
+                        <p class="title has-text-weight-normal">
+                            5
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+        
+        
+        
+    </div>
+</div>
+    
+        
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu links">
+   	     <h3 class="menu-label">
+                 链接
+             </h3>
+             <ul class="menu-list">
+                 
+                     
+                        <li>
+                        <a class="level is-mobile" href="https://angericky.github.io" target="_blank">
+                           <span class="level-left" style="text-decoration: underline">
+                                <span class="level-item">菁菁</span>
+                           </span> 
+                        </a>      
+              	        
+        	
+                     
+                	<a class="level is-mobile" href="https://blog.fun4go.top" target="_blank">
+                    	   <span class="level-right" style="text-decoration: underline">
+                        	<span class="level-item">瓜皮</span>
+                    	   </span>
+               		</a>
+                	</li>
+            	    
+        	
+                     
+                        <li>
+                        <a class="level is-mobile" href="https://mizunashi.me" target="_blank">
+                           <span class="level-left" style="text-decoration: underline">
+                                <span class="level-item">柴柴</span>
+                           </span> 
+                        </a>      
+              	        
+        	
+                     
+                	<a class="level is-mobile" href="https://godweiyang.com" target="_blank">
+                    	   <span class="level-right" style="text-decoration: underline">
+                        	<span class="level-item">韦阳</span>
+                    	   </span>
+               		</a>
+                	</li>
+            	    
+        	
+    	     </ul>
+	</div>
+    </div>
+</div>
+
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+        </div>
+    
+</div>
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+
+
+                <p class="is-size-7">
+                &copy; 2019 BabyQ&nbsp;
+                Powered by <a href="https://sweet-q.github.io" target="_blank">BabyQ</a> 
+ 
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+<script>
+var IcarusThemeSettings = {
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
+
+
+    
+    
+<script src="/js/animation.js"></script>
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="/js/gallery.js" defer></script>
+
+    
+    
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/" target="_blank" rel="noopener">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+    
+    
+<a id="back-to-top" title="回到顶端" href="javascript:;" target="_blank" rel="noopener">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>
